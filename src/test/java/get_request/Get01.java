@@ -1,3 +1,5 @@
+package get_request;
+
 import io.restassured.response.Response;
 import org.junit.Test;
 
@@ -44,16 +46,16 @@ public class Get01 {
     @Test
     public void get01() {
 
-        //  i)  Set the URL,
+        //  I)  Set the URL,
         String url = "https://restful-booker.herokuapp.com/booking/101";
 
-        // ii) Set the expected Data (beklenen datanin olusturulmasi, Post, Put, Patch)
+        // II) Set the expected Data (beklenen datanin olusturulmasi, Post, Put, Patch)
         // Bizden post, put ya da patch istenmedigi icin bu case de kullanmayacagiz.
-        // iii) Type code to send request ( Talep gondermek icin kod yazimi)
+        // III) Type code to send request ( Talep gondermek icin kod yazimi)
         Response response=given().when().get(url);
         response.prettyPrint();
 
-        // iv) Do Assertion (dogrulama yapmak)
+        // IV) Do Assertion (dogrulama yapmak)
 
         response.then().assertThat().statusCode(200).and().contentType("application/json").and().statusLine("HTTP/1.1 200 OK");
 
