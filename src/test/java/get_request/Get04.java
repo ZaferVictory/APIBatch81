@@ -50,5 +50,7 @@ public class Get04 extends JsonplaceholderBaseUrl {
                 contentType(ContentType.JSON).
                 body("id",hasSize(200),"title",hasItem("quis eius est sint explicabo"),// herhangi ıtem da bu var mı
                       "userId",hasItems(2,7,9) );
+
+
     }
 }
