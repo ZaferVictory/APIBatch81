@@ -56,6 +56,8 @@ public class Get05b extends ReqresBaseUrl {
         SoftAssert softAssert=new SoftAssert();
         JsonPath jsonPath=response.jsonPath();// body'nin içindki ddatalari dısarıya cıkarabilmem için bu metodu kullandım
 
+        softAssert.assertEquals(response.getStatusCode(),200);
+        softAssert.assertEquals(response.contentType(),"application/json");
         softAssert.assertEquals(jsonPath.getInt("data.id"),"3","Id degeri dogru degil");
         softAssert.assertEquals(jsonPath.getString("data.name"),"true red","Name degeri dogru degil");
         softAssert.assertEquals(jsonPath.getInt("data.year"),"2002","year degeri dogru degil");
