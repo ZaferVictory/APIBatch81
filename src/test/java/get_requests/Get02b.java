@@ -39,6 +39,12 @@ public class Get02b extends ReqresBaseUrl {
         assertEquals("HTTP/1.1 404 Not Found", response.statusLine());
         assertEquals("cloudflare", response.getHeader("Server"));
         assertEquals(2, response.asString().replaceAll("\\s","").length());
+        //41.satur acıklaması ;
+        // parantazlerle beraber 8 karakter var ben ortadakı boslukları yok etmek ıstıyorum.
+        //bunun için once 2 yi yazdım. ortadakı 6 bosluk karakteri yok edınce 2 tane karakter kalacak elımde
+        //bana da zaten body' i soruyor.
+        //body' i de  asString() metodu ile replaceAll yaptım \\s ile tum boslukları space leri sil dedim
+        //length olarak da elimde 2 kaldı ve body bos kaldı.
 
 
 

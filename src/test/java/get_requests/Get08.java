@@ -60,7 +60,7 @@ public class Get08 extends JsonplaceholderBaseUrl {
         assertEquals(expectedData.get("id"),actualData.get("id"));
         assertEquals(expectedData.get("title"),actualData.get("title"));
         assertEquals(expectedData.get("completed"),actualData.get("completed"));
-        assertEquals("Via","1.1 vegur");
+        assertEquals("1.1 vegur", response.header("Via"));
         assertEquals("cloudflare","Server");
         assertEquals("200",response.statusCode());
 
