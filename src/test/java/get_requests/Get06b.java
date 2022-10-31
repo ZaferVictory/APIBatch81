@@ -57,7 +57,7 @@ public class Get06b extends ReqresBaseUrl {
         List<Integer> ids=jsonPath.getList("data.findAll{it.id>3}id");
         System.out.println("ids"+ ids);
 
-       // Assert that there are 3 ids greater than 3
+       // Assert that there are 3 ids greater than 3>>3'ten büyük 3 kimlik olduğunu iddia edin
         assertEquals(3,ids.size());
 
        // 4)Print all names whose ids are less than 3 on the console

@@ -55,6 +55,8 @@ public class Get05b extends ReqresBaseUrl {
 //Do Assertion
         SoftAssert softAssert=new SoftAssert();
         JsonPath jsonPath=response.jsonPath();// body'nin içindki ddatalari dısarıya cıkarabilmem için bu metodu kullandım
+                                              // body() metodu ile sadece dogrulama yapabılıyorum datayı dısarıya cıkaramıyorum
+        System.out.println(jsonPath.getInt("data.id")+3);//mesela burada ıd'yi aldım 3 ekledim ama body metodunda bunu yapamam
 
         softAssert.assertEquals(response.getStatusCode(),200);
         softAssert.assertEquals(response.contentType(),"application/json");
