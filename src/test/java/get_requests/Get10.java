@@ -36,16 +36,19 @@ public class Get10 extends GoRestBaseUrl {
 
     @Test
     public void get10(){
+        //Set the Url
         spec.pathParams("first","users","second",2986);
 
+        //Set The Expected Data
         GoRestTestData obj = new GoRestTestData();
         Map<String,String> dataKeyMap = obj.dataKeyMap("Navin Talwar","navin_talwar@mclaughlin.name","male","inactive");
         Map<String,Object> expectedData = obj.expectedDataMethod(null, dataKeyMap);
         System.out.println(expectedData);
-
+        //Send The Request and Get The Response
         Response response = given().spec(spec).when().get("/{first}/{second}");
         response.prettyPrint();
 
+        //Do Assertion
         Map<String,Object> actualData = response.as(HashMap.class);//response Mi hasmap'e cevirip Map' e attım. cunku karsılastırdıgıgımız seyde bir map
         System.out.println("actualData = " + actualData);
         assertEquals(expectedData.get("meta"),actualData.get("meta"));
