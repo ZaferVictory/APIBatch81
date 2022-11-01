@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 
-public class Get06 extends RestfulBaseUrl {
+public class Get06_body_equalTo_JsonPath_Ve_SoftAssert_UcuBirArada extends RestfulBaseUrl {
 
     /*
         Given

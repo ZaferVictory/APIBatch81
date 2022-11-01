@@ -10,7 +10,7 @@ import java.util.List;
 import static io.restassured.RestAssured.given;
 import static org.testng.AssertJUnit.assertEquals;
 
-public class Get06b extends ReqresBaseUrl {
+public class Get06b_data_findAll_it_id_3_name_formulu_kullanimi extends ReqresBaseUrl {
      /*
    Given
           https://reqres.in/api/unknown/

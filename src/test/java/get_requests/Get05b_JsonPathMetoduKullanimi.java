@@ -8,7 +8,7 @@ import org.testng.asserts.SoftAssert;
 
 import static io.restassured.RestAssured.given;
 
-public class Get05b extends ReqresBaseUrl {
+public class Get05b_JsonPathMetoduKullanimi extends ReqresBaseUrl {
 
     /*
         Given
