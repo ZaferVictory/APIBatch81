@@ -49,6 +49,7 @@ public class Get10 extends GoRestBaseUrl {
         response.prettyPrint();
 
         //Do Assertion
+
         Map<String,Object> actualData = response.as(HashMap.class);//response Mi hasmap'e cevirip Map' e attım. cunku karsılastırdıgıgımız seyde bir map
         System.out.println("actualData = " + actualData);
         assertEquals(expectedData.get("meta"),actualData.get("meta"));
