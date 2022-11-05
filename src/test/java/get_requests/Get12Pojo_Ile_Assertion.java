@@ -19,9 +19,9 @@ public class Get12Pojo_Ile_Assertion extends RestfulBaseUrl {
     Status code is 200
 And
     Response body is like:
-                      {
-    "firstname": "Dane",
-    "lastname": "Combs",
+   {
+    "firstname": "Guoqiang",
+    "lastname": "Liu",
     "totalprice": 111,
     "depositpaid": true,
     "bookingdates": {
