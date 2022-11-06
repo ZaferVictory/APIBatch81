@@ -11,7 +11,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
-public class Get10 extends GoRestBaseUrl {
+public class Get10_Obje_Olusturup_Map_Ile_Yapilan_Yontem extends GoRestBaseUrl {
      /*
         Given
             https://gorest.co.in/public/v1/users/2986

@@ -66,5 +66,6 @@ And
 
         assertEquals(bookingDatesPojo.getCheckin(),actualData.getBookingdates().getCheckin());
         assertEquals(bookingDatesPojo.getCheckout(),actualData.getBookingdates().getCheckout());
+
     }
 }

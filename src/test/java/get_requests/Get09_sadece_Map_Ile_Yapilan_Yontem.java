@@ -10,7 +10,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
-public class Get09 extends RestfulBaseUrl {
+public class Get09_sadece_Map_Ile_Yapilan_Yontem extends RestfulBaseUrl {
     /*
       Given
           https://restful-booker.herokuapp.com/booking/91

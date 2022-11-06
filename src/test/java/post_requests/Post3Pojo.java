@@ -4,7 +4,7 @@ import base_urls.JsonplaceholderBaseUrl;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Test;
-import pojos.JsonPlacehOlderPojo;
+import pojos.JsonPlaceHolderPojo;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
@@ -40,7 +40,7 @@ public class Post3Pojo extends JsonplaceholderBaseUrl {
         spec.pathParam("first","todos");
 
         //Set The Expected Data
-        JsonPlacehOlderPojo expectedData=new JsonPlacehOlderPojo(55,"Tidy your room",false);
+        JsonPlaceHolderPojo expectedData=new JsonPlaceHolderPojo(55,"Tidy your room",false);
         System.out.println("expectedData "+expectedData);
 
         //send the post request and get the response
@@ -48,7 +48,7 @@ public class Post3Pojo extends JsonplaceholderBaseUrl {
        response.prettyPrint();
        
        //Do assertion
-        JsonPlacehOlderPojo actualData=response.as(JsonPlacehOlderPojo.class);
+        JsonPlaceHolderPojo actualData=response.as(JsonPlaceHolderPojo.class);
         System.out.println("actualData = " + actualData);
 
         assertEquals(200,response.statusCode());
