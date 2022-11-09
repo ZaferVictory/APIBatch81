@@ -37,7 +37,9 @@ public class Get09_sadece_Map_Ile_Yapilan_Yontem extends RestfulBaseUrl {
         spec.pathParams("first", "booking","second", 91);
 
 //Set The Expected Data
-        Map<String,String> bookingdatesMap = new HashMap<>();
+        Map<String,String>
+
+                bookingdatesMap = new HashMap<>();
         bookingdatesMap.put("checkin","2013-02-23");
         bookingdatesMap.put("checkout","2014-10-23");
 
