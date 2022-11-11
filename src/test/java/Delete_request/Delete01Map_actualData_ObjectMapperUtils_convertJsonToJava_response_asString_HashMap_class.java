@@ -8,12 +8,11 @@ import utils.ObjectMapperUtils;
 import java.util.HashMap;
 import java.util.Map;
 
-import static io.restassured.RestAssured.expect;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class Delete01 extends JsonplaceholderBaseUrl {
+public class Delete01Map_actualData_ObjectMapperUtils_convertJsonToJava_response_asString_HashMap_class extends JsonplaceholderBaseUrl {
     /*
         Given
             https://jsonplaceholder.typicode.com/todos/198

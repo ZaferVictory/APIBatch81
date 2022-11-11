@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.*;
 import static junit.framework.TestCase.*;
 
 
-public class Get07 extends JsonplaceholderBaseUrl {
+public class Get07data_findAll_it_id_3_name_formulu_kullanimi extends JsonplaceholderBaseUrl {
 
     /*
         Given

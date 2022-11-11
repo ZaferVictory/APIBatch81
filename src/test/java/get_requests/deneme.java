@@ -54,10 +54,12 @@ public class deneme extends ReqresBaseUrl {
        //Assert that there are 3 ids greater than 3
         assertEquals(3,ids.size());
        //4)Print all names whose ids are less than 3 on the console
-
+        List<Integer>name=jsonPath.getList("data.findAll{it.id<3}.name");
+        System.out.println("name = " + name);
 
 
        //Assert that the number of names whose ids are less than 3 is 2
+        assertEquals(2,name.size());
         
 
 
